@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid - Template Areas</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      .Item {
+        background-color: yellow;
+        border: 3px solid chartreuse;
+        padding: 12px 23px;
+      }
+      #navbar {
+        grid-area: navbar;
+      }
+      #section {
+        grid-area: section;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar" class="Item">Home About Contact Us</div>
+      <div id="section" class="Item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo
+        sint repellendus possimus consequuntur eos fuga natus libero. Temporibus
+        qui cum incidunt cumque. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Aspernatur cupiditate aliquid voluptas asperiores
+        porro fuga nostrum reiciendis ipsum quos! Ipsam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Aspernatur accusamus labore numquam
+        exercitationem possimus autem natus quas. Quasi unde natus dolorem
+        aliquam nisi voluptatibus animi provident soluta quod modi voluptas
+        exercitationem amet, nostrum quam in sit quaerat dolores, sequi, nihil
+        error. Explicabo nulla accusamus veniam consectetur ex officia nesciunt
+        quis.
+      </div>
+      <div id="aside" class="Item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut
+        ipsum repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Soluta facilis amet itaque voluptas voluptate repellendus qui
+        debitis hic quo vitae tempora dignissimos sit, labore assumenda nisi
+        non. Minus, eveniet vitae sint ipsam est dolor possimus ipsum aliquid
+        accusamus rerum odio optio sequi laudantium in voluptates omnis,
+        voluptatem at culpa eos.
+      </div>
+      <footer class="Item">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+        labore ipsum nulla!
+      </footer>
+      <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div>
+        <div class="item">Item-15</div>
+        <div class="item">Item-16</div>
+        <div class="item">Item-17</div>
+        <div class="item">Item-18</div>
+        <div class="item">Item-19</div>
+        <div class="item">Item-20</div> -->
+    </div>
+  </body>
+</html>
